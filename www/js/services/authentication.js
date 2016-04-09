@@ -50,7 +50,8 @@ myApp.factory('Authentication',
           regUser: regUser.uid,
           firstname: user.firstname,
           lastname: user.lastname,
-          email:  user.email
+          email:  user.email,
+          tel:  user.tel
         }); //user info
 
         myObject.login(user);

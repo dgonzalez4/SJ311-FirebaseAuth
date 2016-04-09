@@ -1,6 +1,7 @@
 var myApp = angular.module('myApp',
-  ['ngRoute', 'firebase'])
+  ['ngRoute', 'firebase', 'ngCordova'])
   .constant('FIREBASE_URL', 'https://sj311appauth.firebaseio.com/');
+var fb = new Firebase("https://sj311appauth.firebaseio.com");
 
 
 myApp.run(['$rootScope', '$location',
