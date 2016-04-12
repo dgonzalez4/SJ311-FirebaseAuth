@@ -1,4 +1,4 @@
-myApp.factory('Authentication', 
+myApp.factory('Authentication',
   ['$rootScope', '$firebaseAuth', '$firebaseObject',
   '$location', 'FIREBASE_URL',
   function($rootScope, $firebaseAuth, $firebaseObject,
@@ -24,7 +24,7 @@ myApp.factory('Authentication',
         email: user.email,
         password: user.password
       }).then(function(regUser) {
-        $location.path('/success');
+        $location.path('/meetings');
       }).catch(function(error) {
        $rootScope.message = error.message;
       });
@@ -47,11 +47,11 @@ myApp.factory('Authentication',
         var regRef = new Firebase(FIREBASE_URL + 'users')
         .child(regUser.uid).set({
           date: Firebase.ServerValue.TIMESTAMP,
-          regUser: regUser.uid,
           firstname: user.firstname,
           lastname: user.lastname,
           email:  user.email,
-          tel:  user.tel
+          tel:  user.tel,
+
         }); //user info
 
         myObject.login(user);
