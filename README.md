@@ -16,12 +16,12 @@ $ npm install -g ionic cordova
 
 Clone this repository into your local machine using the terminal 
 ```
-$ git clone https://github.com/dgonzalez4/angularfire-sj311.git
+$ git clone https://github.com/dgonzalez4/SJ311-FirebaseAuth.git
 ```
 
 Open project folder.
 ```
-$ cd angularfire-sj311.git
+$ cd SJ311-FirebaseAuth.git
 ```
 To run as web project
 ```
