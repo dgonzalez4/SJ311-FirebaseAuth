@@ -50,7 +50,6 @@ myApp.factory('Authentication',
           firstname: user.firstname,
           lastname: user.lastname,
           email:  user.email,
-          tel:  user.tel,
 
         }); //user info
 
